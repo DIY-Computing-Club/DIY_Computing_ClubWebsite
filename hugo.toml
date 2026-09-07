@@ -1,0 +1,147 @@
+baseURL = "https://diyhomecomputingclub.com/"
+title = "DIY Home Computing Club"
+author = "DIY Home Computing Club"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+enableRobotsTXT = true
+
+[languages]
+  [languages.en]
+  locale = "en-US"
+  label = "English"
+
+[security]
+  [security.exec]
+  # Default allow-list plus the tailwindcss binary used by the theme's
+  # css.TailwindCSS asset pipeline.
+  allow = ['^(dart-)?sass$', '^go$', '^git$', '^npx$', '^postcss$', '^node$', '^tailwindcss$']
+
+[services]
+  [services.googleAnalytics]
+  #id = "G-XXXXXXXXXX"
+
+  [services.disqus]
+  #shortname = "your-disqus-shortname"
+
+[params]
+description = "Everything about general tech, home computing, and homelabbing — the Colorado State University DIY Home Computing Club."
+showBlog = true
+mainSections = ['blog']
+googleFonts = true
+og_image = "img/og-default.jpg"
+
+  [params.logo]
+  main = "img/logo/logo.png"
+  alt = "DIY Home Computing Club"
+  # size is a TailwindCSS height class
+  size = "h-14"
+
+  [params.site]
+  name = "DIY Home Computing Club"
+
+  [params.icon]
+  #fontawesome = true
+  bootstrap = true
+
+  [params.share]
+  enable = true
+
+  [params.homepage_meta_tags]
+  meta_description = "Everything about general tech, home computing, and homelabbing — the Colorado State University DIY Home Computing Club."
+  meta_og_title = "DIY Home Computing Club"
+  meta_og_type = "website"
+  meta_og_url = "https://diyhomecomputingclub.com/"
+  meta_og_image = "https://diyhomecomputingclub.com/img/og-default.jpg"
+  meta_og_description = "Everything about general tech, home computing, and homelabbing."
+  meta_twitter_card = "summary_large_image"
+
+  [params.giscus]
+  # See https://giscus.app for setup instructions
+  #repo = "DIY-Computing-Club/DIY_Computing_ClubWebsite"
+  #repo_id = ""
+  #category = "Announcements"
+  #category_id = ""
+  #mapping = "pathname"
+  #reactions_enabled = "1"
+  #theme = "preferred_color_scheme"
+  #lang = "en"
+  #loading = "lazy"
+
+[menu]
+  [[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/blog/"
+  weight = 1
+
+  [[menu.main]]
+  identifier = "events"
+  name = "Events"
+  url = "/events/"
+  weight = 2
+
+  [[menu.main]]
+  identifier = "resources"
+  name = "Resources"
+  url = "/resources/"
+  weight = 3
+
+  [[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 4
+
+  [[menu.footer]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+  [[menu.footer]]
+  name = "GitHub"
+  url = "https://github.com/DIY-Computing-Club/DIY_Computing_ClubWebsite"
+  weight = 2
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+  [privacy.vimeo]
+  disabled = false
+  simple = false
+
+  [privacy.x]
+  disabled = false
+  enableDNT = true
+  simple = false
+
+  [privacy.instagram]
+  disabled = false
+  simple = false
+
+  [privacy.youtube]
+  disabled = false
+  privacyEnhanced = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+    unsafe = true
+
+[build]
+  [build.buildStats]
+  enable = true
+  [[build.cachebusters]]
+  source = 'assets/notwatching/hugo_stats\.json'
+  target = 'css'
+
+[module]
+  [[module.mounts]]
+  source = 'assets'
+  target = 'assets'
+  [[module.mounts]]
+  disableWatch = true
+  source = 'hugo_stats.json'
+  target = 'assets/notwatching/hugo_stats.json'

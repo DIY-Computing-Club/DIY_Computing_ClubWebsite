@@ -1,0 +1,13 @@
+/*
+  Site overrides for the DIY Home Computing Club.
+  This file layers on top of the theme's compiled Tailwind styles.
+*/
+
+:root {
+  --club-green: #005821;
+}
+
+/* Keep the header logo tile from looking cramped next to the nav text */
+header nav img {
+  border-radius: 0.5rem;
+}

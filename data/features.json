@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Home Computing",
+    "description": "Building, fixing, and upgrading PCs; operating systems; the command line; making your everyday machine do more.",
+    "icon": "bi bi-house-gear"
+  },
+  {
+    "title": "Homelabbing",
+    "description": "Self-hosting, virtualization, storage, and home networking — running real infrastructure at home.",
+    "icon": "bi bi-hdd-stack"
+  },
+  {
+    "title": "General Tech",
+    "description": "Hardware, retro computing, electronics, and whatever else the club is curious about this week.",
+    "icon": "bi bi-cpu"
+  }
+]
