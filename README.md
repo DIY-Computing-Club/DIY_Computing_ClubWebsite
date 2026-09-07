@@ -2,6 +2,8 @@
 
 Home for everything related to general tech, home computing, and homelabbing.
 
+**Live site: <https://diyhomecomputingclub.com>**
+
 Source for the Colorado State University DIY Home Computing Club website, a
 [Hugo](https://gohugo.io/) site hosted with GitHub Pages.
 
