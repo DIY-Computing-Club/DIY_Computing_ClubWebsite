@@ -1,7 +1,9 @@
-# DIY Computing Club Website
+# The Website for Everything about the Colorado State University DIY Home Computing Club
 
-Source for the DIY Computing Club website, a [Hugo](https://gohugo.io/) site
-hosted with GitHub Pages.
+Home for everything related to general tech, home computing, and homelabbing.
+
+Source for the Colorado State University DIY Home Computing Club website, a
+[Hugo](https://gohugo.io/) site hosted with GitHub Pages.
 
 ## Development
 
