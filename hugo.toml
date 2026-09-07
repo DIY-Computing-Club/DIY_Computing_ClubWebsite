@@ -16,6 +16,11 @@ enableRobotsTXT = true
   # css.TailwindCSS asset pipeline.
   allow = ['^(dart-)?sass$', '^go$', '^git$', '^npx$', '^postcss$', '^node$', '^tailwindcss$']
 
+  [security.node.permissions]
+  # Don't wrap the tailwindcss build in Node's --permission sandbox; the flag
+  # is rejected by some Node builds on CI. This is a trusted local/CI build.
+  disable = true
+
 [services]
   [services.googleAnalytics]
   #id = "G-XXXXXXXXXX"
